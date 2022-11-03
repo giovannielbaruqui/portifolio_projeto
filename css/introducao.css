@@ -1,0 +1,140 @@
+.introducao {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center ;
+}
+
+.introducao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: -40px;
+}
+
+.introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+.introducao .pin {
+    display: inline;
+    width: 24px;
+    height: 24px;
+
+}
+
+@media (max-width: 1000px) {
+    .introducao {
+        margin: auto 0px auto 100px;
+    }
+    
+    .introducao h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:900px) {
+    .introducao {
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    
+    .introducao img {
+        width: 90%;
+    }
+
+    .introducao h1::before {
+        display: none;
+    }
+    .introducao h1 {
+        font-size: 2.8rem;
+    }
+
+    .introducao p {
+        font-size: 1.125rem;
+    }
+
+    .introducao .pin {
+        width: 19px;
+        height: 19px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .introducao h1 {
+        font-size: 2.5rem;
+    }
+
+    .introducao p {
+        font-size: 1rem;
+    }
+
+    .introducao .pin {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .introducao h1 {
+        font-size: 2rem;
+    }
+    
+    .introducao span svg {
+        display: inline;
+        width: 13px;
+    } 
+
+    .introducao p {
+        font-size: 0.9rem;
+    }
+
+    .introducao .pin {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    .introducao {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .introducao h1 {
+        font-size: 2.5rem;
+    }
+
+    .introducao img {
+        display: none;
+    }
+
+    .introducao p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .introducao h1 {
+        font-size: 2.1rem;
+    }
+}

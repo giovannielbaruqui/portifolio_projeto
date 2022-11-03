@@ -1,0 +1,190 @@
+.footer {
+    background: #000000;
+}
+
+.footer-container {
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccccc;
+}
+
+.footer-contato li {
+    font-family: "Fira Sams Bold";
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.footer-contato li a {
+    color: #ffffff;
+}
+
+.footer-contato .icone {
+    position: relative;
+}
+
+.footer-contato .icone::before {
+    display: block;
+    content: "";
+    position:absolute;
+}
+
+.footer-contato .email::before {
+    width: 27px;
+    height: 27px;
+    top: 5px;
+    left: -36px;
+    background: url("../img/email.svg") no-repeat center;
+}
+
+.footer-contato .phone::before {
+    width: 27px;
+    height: 27px;
+    top: 3px;
+    left: -36px;
+    background: url("../img/phone.svg") no-repeat center;
+}
+
+.footer-contato .linkedin::before {
+    width: 36px;
+    height: 36px;
+    top: 1px;
+    left: -39px;
+    background: url("../img/linkedin.svg") no-repeat center;
+}
+
+.footer-contato .github::before {
+    width: 36px;
+    height: 36px;
+    top: 1px;
+    left: -41px;
+    background: url("../img/github.svg") no-repeat center;
+}
+
+.footer-copy {
+    grid-column: 1 / -1;
+    font-size: 1.125rem;
+    color: #8f8f8f;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+   } 
+
+   .footer-contato li {
+        font-size: 1.5rem;
+
+   }
+
+   .footer-contato li {
+        margin-left: 40px;
+   }
+
+   .footer-contato .icone::before {
+        top: 0px;
+        width: 24px;
+        height: 24px;
+   }
+   
+   .footer-contato .linkedin::before {
+        top: -1px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-contato .github::before {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 415px) {
+    .footer-texto {
+        font-size: 1.4rem;
+    }
+    
+    .footer-contato li {
+        font-size: 1.3rem;
+    }
+
+    .footer-contato .email::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-contato .phone::before {
+        width: 19px;
+        height: 19px;
+        top: -2px;
+    }
+
+    .footer-contato .linkedin::before {
+        width: 24px;
+        height: 24px;
+        top: -2px;
+    }
+
+    .footer-contato .github::before {
+        width: 25px;
+        height: 25px;
+        top: -3px;
+    }
+
+    .footer-copy {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 355px) {
+    .footer-texto {
+        font-size: 1.125rem;
+    }
+    
+    .footer-contato li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .footer-contato .icone {
+        margin-left: 0px;
+    }
+    
+    .footer-contato .icone::before {
+        display: none;
+    }
+
+    .footer-contato .linkedin::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        top: -5px;
+        background: url("../img/linkedin.svg") no-repeat center;
+    }
+
+    .footer-contato .github::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        top: -5px;
+        background: url("../img/github.svg") no-repeat center;
+    }
+}
